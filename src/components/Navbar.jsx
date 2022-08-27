@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './CardWidget';
-import TituloPrincipal from './TituloPrincipal';
+
 
 
 const Navbar =()=> {
@@ -10,7 +10,7 @@ const Navbar =()=> {
         <a className="navbar-brand" href="index.html">
         <Logo />
         </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button className='navbar-toggler' type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i className="bi bi-list"></i>
         </button>
         <div className="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
@@ -36,9 +36,6 @@ const Navbar =()=> {
           </ul>
         </div>
        </nav>     
-       <div>
-          <TituloPrincipal titulo="Tu Libreria en Linea" />
-       </div>
      </header>
     )
 }   
