@@ -1,10 +1,14 @@
 import React from 'react';
-import logo from "../../assets/images/logolibreria.png";
+import logoCarrito from "../../assets/images/logoCarrito.png";
 
-const Logo =()=>{ 
+const Carrito =()=>{ 
   return (
-    <img src={logo} class="logo" width="150" alt="logo Libreria"/>
+    <button type="button" className="btn position-relative">
+       <a href="!#"><img src={logoCarrito} width="38"/></a>
+          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0
+          </span>
+    </button>
   )  
 } 
 
-export default Logo;
+export default Carrito;

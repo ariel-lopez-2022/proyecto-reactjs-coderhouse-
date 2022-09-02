@@ -3,14 +3,3 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    background-color:rgb(227, 225, 225);
-   
-}
-.nav-link{
-    color: black;
-}
-h1{
-    display:flex;
-    justify-content: center;
-}
