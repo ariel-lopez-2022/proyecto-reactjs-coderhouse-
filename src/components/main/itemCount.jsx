@@ -1,27 +1,47 @@
-import React from 'react';
-import { useState } from 'react';
-import './itemCount.css';
+import { useState} from 'react';
+import './card.css';
 
 export const ItemCount =({inicial, stock, onAdd})=> {
-    const [count, setCount] = useState(inicial);
+    
+    const [cantidad, setCantidad] = useState(inicial);
+    const [itemStock, setitemStock] = useState(stock);
+    const [ItemAdd, setitemAdd] = useState(onAdd);
 
-    const sumar =()=>{
-        setCount(count+1);
+    const restar =(valor)=>{
+        if (valor > 0){
+            setCantidad(valor);
+        }
     }
-    const restar =()=>{
-        setCount(count-1);
+   
+    const sumar =(valor)=>{
+        if (valor <= itemStock){
+          setCantidad(valor);
+        }
     }
+    const agregar =()=>{
+      if (cantidad <= itemStock){
+        setitemStock(itemStock - cantidad);
+        setitemAdd(ItemAdd + cantidad)
+      }
+    }
+
+   
     return (
-        <div className="contenedor">
-          <div className="contador">  
-            <button className="boton" disabled={count <= 1} onClick={restar}>-</button>
-            <span className="span">{count}</span>
-            <button className="boton" disabled={ count >= stock} onClick={sumar} >+</button>
-          </div>
-          <div>
-            <button className="botonCarrito" disabled={stock <= 0} onClick={()=> onAdd(count)}>Agregar a Carrito</button>
-          </div>
-        </div>
+      <div className="container">
+        <div className="row d-flex justify-content-center ">
+        <div className="col-6 ">
+           <div className="input-group  ">
+             <input type="button" className="btn boton-agregar " value="-" onClick={()=>{restar(cantidad - 1)}} />
+             <input type="text" className="form-control imput p-0 text-center" value={cantidad} onChange={() => {}}  />
+             <input type="button" className="btn boton-agregar " value="+" onClick={()=>{sumar(cantidad + 1)}} />
+           </div>
+           <div className="d-grid gap-2">
+            <button type="button" className="btn boton-agregar" onClick={()=>{agregar()}}>Agregar</button>
+           </div> 
+           <p className="card-text m-0">Productos Agregados: {ItemAdd}</p>
+         </div>
+      </div>
+    </div> 
     )
 }
 
