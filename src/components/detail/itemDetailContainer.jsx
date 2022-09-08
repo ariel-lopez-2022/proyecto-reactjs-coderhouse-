@@ -3,8 +3,8 @@ import ItemDetail from './itemDetail';
 import programacion from '../../assets/helpers/programacion';
 
 const ItemDetailContainer = () => {
-   const [objeto, setObjeto] = useState([]);
-
+   const [objeto, setObjeto] = useState({});
+   
    useEffect(() => {
       const getData =new Promise (resolve => {
         setTimeout(() => {
@@ -18,9 +18,12 @@ const ItemDetailContainer = () => {
    }, [])
 
    return (
-    <div className="container-fluid d-flex justify-content-center">
-        <ItemDetail descripcion={objeto.descripcion}  />
-    </div>
+         <div className="container-fluid ">
+             <div className="row d-flex justify-content-center">
+             <h5 className="card-title text-center">Detalles de Productos</h5>
+             <ItemDetail objeto={objeto}  />
+             </div>
+        </div>
    )
 }
 export default ItemDetailContainer;

@@ -38,7 +38,7 @@ export const ItemCount =({inicial, stock, onAdd})=> {
            <div className="d-grid gap-2">
             <button type="button" className="btn boton-agregar" onClick={()=>{agregar()}}>Agregar</button>
            </div> 
-           <p className="card-text m-0">Productos Agregados: {ItemAdd}</p>
+           
          </div>
       </div>
     </div> 
