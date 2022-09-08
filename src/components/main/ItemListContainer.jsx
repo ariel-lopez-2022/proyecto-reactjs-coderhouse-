@@ -6,8 +6,6 @@ const ItemListContainer = () => {
    const [datos, setDatos] = useState([]);
 
    useEffect(() => {
-      
-
       const getData =new Promise (resolve => {
         setTimeout(() => {
             resolve(programacion)
@@ -19,7 +17,9 @@ const ItemListContainer = () => {
 
    return (
     <div className="container-fluid">
-       <h1>Bienvenido a Tu libreria Online!!!</h1>
+       <h1>Bienvenido a Tu libreria Online!!!
+         
+       </h1>
        <ItemsList datos={datos} />
     </div>
    )
