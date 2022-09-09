@@ -2,9 +2,8 @@ import React from 'react';
 import ItemCount from './itemCount';
 
 
-export const itemDetail =({objeto})=>{
-  console.log(objeto.id, objeto.descripcion);
-   
+export const ItemDetail =({objeto})=>{
+ 
     return(
         <div  className="card ">
         <div  className="d-flex justify-content-center"> 
@@ -16,10 +15,10 @@ export const itemDetail =({objeto})=>{
           <p className="card-text text-center">$ {objeto.precio}</p>
           <p className="card-text text-center">Cantidad: {objeto.cantidad} </p>
 
-          <ItemCount inicial= {1}  />
+          <ItemCount inicial= {1} stock={objeto.cantidad} onAdd={0}  />
         </div>
       </div>
        
     )
 }
-export default itemDetail;
+export default ItemDetail;
