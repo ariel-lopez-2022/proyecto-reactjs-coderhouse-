@@ -7,13 +7,13 @@ export const ItemDetailContainer = () => {
    const {id} = useParams();  
    const [item, setItem]= useState({});
       
+      
       useEffect(() => {
-       
          fetch ('../json/productos.json')
             .then ((res) => res.json())
             .then (json =>{
                 
-                const encontrado = json.find (item => item.id == id);
+                const encontrado = json.find (item => item.id === id);
                 setItem(encontrado) 
             });
            

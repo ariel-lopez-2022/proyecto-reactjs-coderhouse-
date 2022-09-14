@@ -38,7 +38,7 @@ export const ItemCount =({inicial, stock, onAdd})=> {
              <input type="button" className="btn boton-agregar " value="+" onClick={()=>{sumar(cantidad + 1)}} />
            </div>
            <div className="d-grid gap-2 d-flex justify-content-center">
-            <Boton titulo="Agregar" />
+            <Boton titulo="Agregar" onClick={()=>{agregar()}} />
             <Link to="/">
             <Boton titulo="Cerrar" />
             </Link>
