@@ -5,5 +5,5 @@
 - 4ta Entrega : Contador con botón
 - 5ta Entrega : Promesa y renderizado de Productos
 - 6ta Entrega : Promesa y renderizado detalle de Producto
--7ta entrega : Primera entrega Proyecto final:
-   - se agregaron rutas de navegacion y rutas estaticas y dinamicas
+- 7ta entrega : Primera entrega Proyecto final:
+   - se agregaron rutas y navegacion dinamica
