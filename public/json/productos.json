@@ -1,0 +1,148 @@
+[
+{
+ "id":1,
+ "descripcion":"Aprende Logica de Programacion",
+ "imagen":"../../images/programacion/logicadeprogramacion.jpg",
+ "precio":1500, 
+ "cantidad":10,
+ "categoria":"Lenguajes Programación"
+},
+{
+ "id":2,
+ "descripcion":"Aprende Logica de Programacion",
+ "imagen":"../../images/programacion/aprendelogica.jpg", 
+ "precio":2500, 
+ "cantidad":10,
+ "categoria":"Lenguajes Programación"
+},
+{
+ "id":3,
+ "descripcion":"Programacion para Principiantes", 
+ "imagen":"../../images/programacion/programacionprincipiantes.jpg", 
+ "precio":1000,
+ "cantidad":10,
+ "categoria":"Lenguajes Programación"
+},
+{
+"id":4, 
+"descripcion":"Aprende C#",
+"imagen":"../../images/programacion/aprendec.jpg", 
+"precio":3500, 
+"cantidad":10,
+"categoria":"Lenguajes Programación"
+},
+{
+"id":5, 
+"descripcion":"Aprende JavaScript Principiante",
+"imagen":"../../images/programacion/javascript.jpg",
+"precio":2500,
+"cantidad":10,
+"categoria":"Lenguajes Programación"
+},
+{
+"id":6, 
+"descripcion":"Programacion Python Principiante", 
+"imagen":"../../images/programacion/pythonprincipiante.jpg", 
+"precio":3500, 
+"cantidad":10,
+"categoria":"Lenguajes Programación"
+},
+{
+"id":7,
+"descripcion":"Desarrollo Web con HTML5",
+"imagen":"../../images/desarrolloweb/desarrollowebconhtml5.jpg",
+"precio":1500, 
+"cantidad":10,
+"categoria":"Desarrollo Web"
+},
+{
+"id":8,
+"descripcion":"Desarrollo de Aplicaciones Web",
+"imagen":"../../images/desarrolloweb/desarrolloaplicacionesweb.jpg", 
+"precio":2500, 
+"cantidad":10,
+"categoria":"Desarrollo Web"
+},
+{
+"id":9,
+"descripcion":"El Gran Libro HTML5, CSS3 Y JavaScript ", 
+"imagen":"../../images/desarrolloweb/elgranlibro-html-css-js.webp", 
+"precio":1000,
+"cantidad":10,
+"categoria":"Desarrollo Web"
+},
+{
+"id":10, 
+"descripcion":"Curso Practico HTML y CSS",
+"imagen":"../../images/desarrolloweb/html-css.webp", 
+"precio":3500, 
+"cantidad":10,
+"categoria":"Desarrollo Web"
+},
+{
+"id":11, 
+"descripcion":"HTML y CSS",
+"imagen":"../../images/desarrolloweb/htmlyccs.jpg",
+"precio":2500,
+"cantidad":10,
+"categoria":"Desarrollo Web"
+},
+{
+"id":12, 
+"descripcion":"Web Development Books", 
+"imagen":"../../images/desarrolloweb/web_development_books.png", 
+"precio":3500, 
+"cantidad":10,
+"categoria":"Desarrollo Web"
+},
+{
+    "id":13,
+    "descripcion":"Aprende SQL",
+    "imagen":"../../images/basededatos/aprende-SQL.webp",
+    "precio":1500, 
+    "cantidad":10,
+    "categoria":"Base de Datos"
+    },
+    {
+    "id":14,
+    "descripcion":"Base de Datos",
+    "imagen":"../../images/basededatos/base-de-datos.jpg", 
+    "precio":2500, 
+    "cantidad":10,
+    "categoria":"Base de Datos"
+    },
+    {
+    "id":15,
+    "descripcion":"Base de Datos", 
+    "imagen":"../../images/basededatos/basededatos.jpg", 
+    "precio":1000,
+    "cantidad":10,
+    "categoria":"Base de Datos"
+    },
+    {
+    "id":16, 
+    "descripcion":"Bases de Datos Problemas Resueltos",
+    "imagen":"../../images/basededatos/basesdedatos-problemas-resueltos.jpg", 
+    "precio":3500, 
+    "cantidad":10,
+    "categoria":"Base de Datos"
+    },
+    {
+    "id":17, 
+    "descripcion":"Curso Practico para Diseño de Bases de Datos",
+    "imagen":"../../images/basededatos/curso-practico-para-diseño-basededatos.jpg",
+    "precio":2500,
+    "cantidad":10,
+    "categoria":"Base de Datos"
+    },
+    {
+    "id":18, 
+    "descripcion":"Gestion Bases de Datos", 
+    "imagen":"../../images/basededatos/gestionbasededatos.jpg", 
+    "precio":3500, 
+    "cantidad":10,
+    "categoria":"Base de Datos"
+    }
+
+]
+

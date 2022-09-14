@@ -1,8 +1,10 @@
 import React from 'react';
-import './header.css';
+import '../style/header.css';
 import navBarOption from '../../assets/helpers/string';
 import Logo from './logo';
 import Carrito from './CardWidget';
+import {Link} from 'react-router-dom'
+
 
 const Navbar =()=> {
     return(
@@ -28,7 +30,7 @@ const Navbar =()=> {
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                        {navBarOption.map(Option =>
                           <li key={Option.id}>
-                            <a className="dropdown-item" href="!#">{Option.categoria}</a> 
+                            <Link className="dropdown-item" to={"/categoria/" + Option.categoria}>{Option.categoria}</Link> 
                           </li>
                       )}
                     </ul>

@@ -1,0 +1,17 @@
+header{
+    background-color:rgb(230, 229, 229);
+   
+}
+.nav-link{
+    color: black;
+}
+h1{
+    display:flex;
+    justify-content: center;
+}
+.material-icons{
+    padding: 5px;
+    width: 50px;
+    font-size:2rem;
+    border: 2px solid black;
+}
