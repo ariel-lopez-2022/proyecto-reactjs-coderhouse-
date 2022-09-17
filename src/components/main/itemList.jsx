@@ -6,7 +6,7 @@ import Items from './item';
 export const ItemsList =({datos = []})=>{
     
     return(
-        <div className="row d-flex justify-content-center">
+        <div className="row p-2 d-flex justify-content-center">
             {datos.map(dato => <Items key={dato.id} info={dato} />)}
        </div>  
     )    

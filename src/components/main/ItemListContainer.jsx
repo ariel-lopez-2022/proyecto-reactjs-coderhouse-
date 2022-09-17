@@ -22,9 +22,8 @@ const ItemListContainer = () => {
    }, [categoria])
 
    return (
-    <div className="container-fluid">
-       <h1>Bienvenido a Tu libreria Online!!!
-       </h1>
+    <div className="container-fluid ">
+       <h1 className="text-center">Bienvenido a Tu libreria Online!!!</h1>
        <ItemsList datos={datos} />
     </div>
    )

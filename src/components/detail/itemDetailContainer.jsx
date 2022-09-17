@@ -20,11 +20,9 @@ export const ItemDetailContainer = () => {
       }, [id])
 
    return (
-         <div className="container-fluid ">
-             <div className="row d-flex justify-content-center">
-             <h5 className="card-title text-center">Detalles de Productos</h5>
+         <div className="container d-flex justify-content-center">
              <ItemDetail objeto={item}  />
-             </div>
+           
         </div>
    )
 }

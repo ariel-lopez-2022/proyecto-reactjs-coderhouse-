@@ -1,10 +1,10 @@
 import React from "react";
 
-export const Boton= (props)=>{
+export const Boton= ({titulo})=>{
     
     return (
         <div className="frame">
-          <button className="custom-btn btn-16">{props.titulo}</button>
+          <button className="custom-btn btn-16">{titulo}</button>
         </div>
     )
 }

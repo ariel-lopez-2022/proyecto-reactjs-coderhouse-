@@ -1,13 +1,10 @@
-
-  button {
-    margin: 20px;
-  }
-  .custom-btn {
-    width: 120px;
+.boton-count {
+  text-align: center;
+    width: 80px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
-    
+    padding: 4px 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -22,11 +19,11 @@
   }
 
 
-.btn-16 {
+.btn-15 {
     border: none;
     color: #000;
   }
-  .btn-16:after {
+  .btn-15:after {
     position: absolute;
     content: "";
     width: 0;
@@ -42,14 +39,14 @@
      4px 4px 5px 0px #0001;
     transition: all 0.3s ease;
   }
-  .btn-16:hover {
+  .btn-15:hover {
     color: #000;
   }
-  .btn-16:hover:after {
+  .btn-15:hover:after {
     left: auto;
     right: 0;
     width: 100%;
   }
-  .btn-16:active {
+  .btn-15:active {
     top: 2px;
   }

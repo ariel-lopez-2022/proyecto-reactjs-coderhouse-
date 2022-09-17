@@ -6,7 +6,7 @@ const Logo =()=>{
   return (
     
     <Link to='/'>
-    <img src={logo} className="logo" width="150" height="48" alt="logo Libreria"/>
+    <img src={logo} className="logo img-fluid" width="150" height="48" alt="logo Libreria"/>
     </Link>
     
   )  

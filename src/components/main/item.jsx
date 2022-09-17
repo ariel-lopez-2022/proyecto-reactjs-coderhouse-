@@ -10,10 +10,9 @@ export const Items =({info})=>{
  
     return(
         <div className="card mb-3">
-        
           <div className="row g-0 ">
-            <div className="col-md-4 p-1">
-             <img src={imagen} className="img-fluid" width="200" alt={descripcion}/>
+            <div className="col-md-4 p-1 d-flex justify-content-center">
+             <img src={imagen} className="img-fluid img-card" width="200" alt={descripcion}/>
             </div>
            <div className="col-md-8 titulo">
             <div className="card-body text-center">
