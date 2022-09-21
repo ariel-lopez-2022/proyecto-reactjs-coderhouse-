@@ -6,7 +6,7 @@ const ItemListContainer = () => {
   
   const [datos, setDatos] = useState([]);
   const {categoria} =useParams();
-  
+ 
    useEffect(() => {
       fetch ('../json/productos.json')
          .then ((res) => res.json())

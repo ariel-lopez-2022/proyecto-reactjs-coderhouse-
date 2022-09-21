@@ -24,8 +24,6 @@ export const Items =({info})=>{
              </div>
           </div>
         </div>
-      
-         
       </div> 
     )
 }

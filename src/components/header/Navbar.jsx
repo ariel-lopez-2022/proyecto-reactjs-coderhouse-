@@ -23,7 +23,6 @@ const Navbar =()=> {
           </button>
           <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
               <ul className="navbar-nav ">
-
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle text-center" href="!#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     PRODUCTOS
@@ -35,7 +34,6 @@ const Navbar =()=> {
                         </li>
                     )}
                   </ul>
-              
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active text-center" aria-current="page" href="!#">CONTACTANOS</a>
