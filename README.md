@@ -13,3 +13,10 @@
      - Eliminar producto del carrito x su id
      - ELiminar Todo el Carrito 
      - Verificador si existe Producto en el carrito x su id   
+- 10 Entrega : Se creo Vista de Carrito
+     - Agregar Productos al carrito 
+     - Eliminar producto del carrito x su id
+     - ELiminar Todo el Carrito 
+     - Verificador si existe Producto en el carrito x su id 
+     - CardWidge se muestra con cantidad siempre 
+       y cuando el carrito este con productos.   
