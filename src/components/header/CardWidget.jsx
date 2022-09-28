@@ -9,7 +9,12 @@ const Carrito =()=>{
  
   if (cart.length === 0){
     return(
-      <> </>
+      <>
+       <div className="widge" >
+       <span className="">Vacio</span>
+        <span className="material-icons">shopping_cart</span>
+       </div>
+       </>
 
     )
              
@@ -18,12 +23,12 @@ const Carrito =()=>{
   return (
     <Link to="/carrito" style={{ textDecoration: 'none'}} >
     <div className="widge" >
+    <span className="m-1">{TotalProductos() || '' }</span>
        <span className="material-icons">shopping_cart</span>
-       <span className="m-1">{TotalProductos() || '' }</span>
+       
     </div>
     </Link>
   )
   
- 
 } 
 export default Carrito;

@@ -1,5 +1,6 @@
 import React,{ useContext } from "react";
 import { CartContext } from "../../context/CartContext";
+
 import '../style/ItemCart.css';
 
 
@@ -8,12 +9,12 @@ const Cart =()=> {
     return(
        <section className="container"> 
         <div className="descripcion row mt-3 p-2 d-flex justify-content-around text-center">
-          <div className="col-2 d-none d-md-block">Foto</div>
-          <div className="col-2 ">Desc.</div>
-          <div className="col-2 ">Cant.</div>
-          <div className="col-2 d-none d-md-block">Prec.</div>
-          <div className="col-2 ">S.total</div>
-          <div className="col-2 ">Eliminar</div>
+          <span className="col-2 d-none d-md-block">Foto</span>
+          <span className="col-2 ">Desc.</span>
+          <span className="col-2 ">Cant.</span>
+          <span className="col-2 d-none d-md-block">Prec.</span>
+          <span className="col-2 ">S.total</span>
+          <span className="col-2 ">Eliminar</span>
         </div>
             {cart.map((producto)=> {
                 return (
@@ -30,12 +31,10 @@ const Cart =()=> {
               )
             })}
            
-            <div className="descripcion row mt-4 d-flex justify-content-center">
-              <h5 className="text-center total p-2 " > Total Compra $  {TotalPrecio()}
-              </h5>
-              <span className="material-icons" onClick={() => {ClearCart()}}>delete_forever
-              
-              </span>
+            <div className="descripcion row mt-4 d-flex justify-content-arrow ">
+              <h5 className="col-8 text-center total p-2 m-0 " > Total $  {TotalPrecio()}</h5>
+              <span className="col-4 material-icons " onClick={() => {ClearCart()}}>delete_forever</span>
+             
             </div>
         </section>
       

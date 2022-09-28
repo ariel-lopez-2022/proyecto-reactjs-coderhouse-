@@ -38,8 +38,8 @@ export const ItemDetail =({objeto})=>{
              <Link to='/carrito' >
                  <Boton titulo="Ir a carrito" />
              </Link> 
-             <Link to='/carrito' >
-                 <Boton titulo="Terminar" />
+             <Link to='/' >
+                 <Boton titulo="Agregar mas" />
              </Link>      
              </div>
             : <ItemCount inicial= {1} stock={objeto.cantidad} onAdd={onAdd}/>

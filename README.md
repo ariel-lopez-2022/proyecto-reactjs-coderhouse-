@@ -19,4 +19,6 @@
      - ELiminar Todo el Carrito 
      - Verificador si existe Producto en el carrito x su id 
      - CardWidge se muestra con cantidad siempre 
-       y cuando el carrito este con productos.   
+       y cuando el carrito este con productos.  
+- 11 Enterga: se creo la conexion con firebase para obtener
+       todos los productos, filtrado de categoria e producto por id.        

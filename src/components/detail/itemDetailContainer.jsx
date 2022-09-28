@@ -1,5 +1,7 @@
+import { collection, doc, getDoc} from 'firebase/firestore';
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
+import { db } from '../../configuracionFirebase';
 import ItemDetail from './itemDetail';
 
 
@@ -9,13 +11,13 @@ export const ItemDetailContainer = () => {
       
       
       useEffect(() => {
-         fetch ('../json/productos.json')
-            .then ((res) => res.json())
-            .then (json =>{
-                
-                const encontrado = json.find (item => item.id === id);
-                setItem(encontrado) 
-            });
+         // uso de fireBase- firestore
+         const colecionProductos = collection(db, 'productos') 
+         const refId = doc(colecionProductos, id); 
+         getDoc(refId)
+         .then((res) =>{
+               setItem({id:res.id, ...res.data(),})
+         })
            
       }, [id])
 
@@ -27,3 +29,13 @@ export const ItemDetailContainer = () => {
    )
 }
 export default ItemDetailContainer;
+  
+
+// uso de consultas a api y archivos json
+         /*
+         fetch ('../json/productos.json')
+            .then ((res) => res.json())
+            .then (json =>{
+                const encontrado = json.find (item => item.id === id);
+                setItem(encontrado) 
+            });*/
