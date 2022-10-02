@@ -1,5 +1,7 @@
 import React,{ useContext } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import Boton from "../globales/boton";
 
 import '../style/ItemCart.css';
 
@@ -18,7 +20,7 @@ const Cart =()=> {
         </div>
             {cart.map((producto)=> {
                 return (
-                 <div key={producto.id} className=" row mt-4  d-flex justify-content-around text-center">
+                 <div key={producto.id} className=" row mt-4  d-flex justify-content-around text-center align-items-center">
                     <td className="col-2 d-none d-md-block"><img src={producto.imagen} width="40" className="img-fluid" alt={producto.descripcion} /></td>
                     <td className="col-2 text ">{producto.descripcion}</td>
                     <td className="col-2 text ">{producto.cantidad}</td>
@@ -31,10 +33,13 @@ const Cart =()=> {
               )
             })}
            
-            <div className="descripcion row mt-4 d-flex justify-content-arrow ">
-              <h5 className="col-8 text-center total p-2 m-0 " > Total $  {TotalPrecio()}</h5>
-              <span className="col-4 material-icons " onClick={() => {ClearCart()}}>delete_forever</span>
-             
+            <div className="descripcion row mt-4 d-flex justify-content-between align-items-center ">
+              <h5 className="col-4 text-center total p-2 m-0  " > Total $  {TotalPrecio()}</h5>
+              
+             <span className="col-4 ">
+               <Link to="/formulario"><Boton titulo="Finalizar"/> </Link>
+             </span>
+             <span className="col-4 material-icons text-center " onClick={() => {ClearCart()}}>delete_forever</span>
             </div>
         </section>
       
