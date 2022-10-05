@@ -21,4 +21,7 @@
      - CardWidge se muestra con cantidad siempre 
        y cuando el carrito este con productos.  
 - 11 Enterga: se creo la conexion con firebase para obtener
-       todos los productos, filtrado de categoria e producto por id.        
+       todos los productos, filtrado de categoria e producto por id.  
+- 12 Entrega : Se genera Orden de pedido y se guarda en e FireBase.
+
+-13 Entrega : Entrega Final Proyecto con todas las funcionalidades Necesarias.
