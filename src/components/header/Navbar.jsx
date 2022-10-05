@@ -24,9 +24,9 @@ const Navbar =()=> {
           <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
               <ul className="navbar-nav ">
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle text-center" href="!#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span className="nav-link dropdown-toggle text-center"  id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false">
                     PRODUCTOS
-                  </a>
+                  </span>
                   <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                      {navBarOption.map(Option =>
                         <li key={Option.id}>

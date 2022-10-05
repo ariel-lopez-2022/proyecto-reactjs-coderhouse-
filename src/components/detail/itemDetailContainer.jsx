@@ -11,7 +11,7 @@ export const ItemDetailContainer = () => {
       
       
       useEffect(() => {
-         // uso de fireBase- firestore
+         
          const colecionProductos = collection(db, 'productos') 
          const refId = doc(colecionProductos, id); 
          getDoc(refId)
@@ -31,11 +31,3 @@ export const ItemDetailContainer = () => {
 export default ItemDetailContainer;
   
 
-// uso de consultas a api y archivos json
-         /*
-         fetch ('../json/productos.json')
-            .then ((res) => res.json())
-            .then (json =>{
-                const encontrado = json.find (item => item.id === id);
-                setItem(encontrado) 
-            });*/

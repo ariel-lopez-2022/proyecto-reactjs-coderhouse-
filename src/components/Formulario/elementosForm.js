@@ -16,13 +16,8 @@ const Contenedor = styled.div`
 `;
 
 const Formulario = styled.form`
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 20px;
 
-@media (max-width: 800px){
-    grid-template-columns: 1fr;
-}
+
 `;
 
 
@@ -68,7 +63,7 @@ const Input = styled.input`
 `;    
 
 const LeyendaError = styled.p`
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 0;
     color: ${colores.error};
     display: none;
@@ -141,18 +136,21 @@ outline: none;
 
 
 const MensajeError = styled.div`
-    
     height: 60px;
+    font-size:12px;
 	line-height: 45px;
 	background: #F66060;
 	padding: 0px 15px;
 	border-radius: 3px;
-	grid-column: span 2;
+	span {
+        font-size:30px;
+    }
 	p {
 		margin: 0;
+        
 	} 
 	b {
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 `;
 

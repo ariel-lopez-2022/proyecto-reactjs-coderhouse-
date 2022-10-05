@@ -9,8 +9,7 @@ const ItemListContainer = () => {
   const {categoria} =useParams();
  
    useEffect(() => {
-      // uso de fireBase
-         
+            
         const colecionProductos = collection(db, 'productos') 
         const refCategoria = categoria 
         ? query(colecionProductos, where('categoria', '==', categoria)) 
@@ -26,17 +25,7 @@ const ItemListContainer = () => {
            setDatos(productos)
         })
 
-      // uso de consultas a api y archivos json
-      /* fetch ('../json/productos.json')
-         .then ((res) => res.json())
-         .then ((json) =>{
-              if (categoria === undefined){
-               setDatos(json)
-              }else {
-             const arrayCategoria = json.filter(producto => producto.categoria === categoria);          
-             setDatos(arrayCategoria)
-             }
-         });*/
+      
         
    }, [categoria])
 
